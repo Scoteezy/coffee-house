@@ -67,13 +67,13 @@
     "indent": ["warn", 2],
 
     // * Formatting the end of the line by windows format (CRLF)
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["warning", "windows"],
 
     // * The term format ('string')
     "quotes": ["error", "double"],
 
     // * Format of the end of the line, installation of a point with a comma (;)
-    "semi": ["error", "always"],
+    "semi": ["warning", "always"],
 
     // * The format of installation of a gap in front of the function of the function
     "space-before-function-paren": [
