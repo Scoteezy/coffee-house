@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 
-import { Merienda } from "next/font/google";
+import Header from "@/components/shared/Header";
 
-import "./globals.css";
-
-const merienda = Merienda({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Coffee house",
@@ -17,8 +14,9 @@ export default function RootLayout ({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={merienda.className}>{children}</body>
-    </html>
+    <div className="flex h-screen wrapper">
+      <Header/>
+      <section>{children}</section>
+    </div>
   );
 }
