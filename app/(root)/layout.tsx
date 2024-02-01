@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "We makes every day full of energy and taste. Best coffee shop in the world.",
 };
 
-export default function RootLayout({
+export default function RootLayout ({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -14,10 +14,10 @@ const Navigation = ({
       className={`w-full flex wrapper
       ${style === "white" ? "text-white" : "text-black"}  
       ${
-        position === "footer"
-          ? "flex-col sm:flex-row flex-center"
-          : "flex-between  sm:items-center sm:justify-start"
-      }`}
+    position === "footer"
+      ? "flex-col sm:flex-row flex-center"
+      : "flex-between  sm:items-center sm:justify-start"
+    }`}
     >
       {links.map((link) => (
         <Link
