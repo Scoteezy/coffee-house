@@ -1,4 +1,3 @@
-import { mock } from "@/constants";
 import { ICoffee } from "@/types";
 
 import {
@@ -11,11 +10,12 @@ import Card from "./Card";
 
 interface ListProps {
   data: ICoffee[];
+  carousel?: boolean
 }
 
-const List = ({ data }: ListProps) => {
+const List = ({ data,carousel }: ListProps) => {
   return (
-    <Carousel className="w-full mx-auto">
+    carousel ? (<Carousel className="w-full mx-auto">
       <CarouselContent>
         {data.map((cof) => (
           <CarouselItem
@@ -26,9 +26,12 @@ const List = ({ data }: ListProps) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-    </Carousel>
-    //  <div className="flex flex-between ">
-    //  </div>
+    </Carousel>): 
+      <div className=" grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 ">
+        { data.map((cof,i) => i<6 && (
+          <Card  key={cof.id} {...cof} />
+        ))}
+      </div>  
   );
 };
 
