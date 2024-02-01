@@ -89,6 +89,12 @@
   .bg-hero { 
     @apply bg-hero-pattern object-fill w-full bg-[length:100%_100%];
   }
+  .bg-header-first{
+    @apply bg-header-1 object-fill w-full bg-[length:100%_100%];
+  }
+  .bg-header-second{
+    @apply bg-header-2 object-fill w-full bg-[length:100%_100%];
+  }
   /* TYPOGRAPHY */
   /* 40 */
   .h1-regular {

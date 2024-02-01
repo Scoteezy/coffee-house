@@ -4,7 +4,7 @@ export const links = [
     label: "Coffee house",
     link: "/",
     img: "/images/beans.svg",
-    imgBlack: "images/beans-2.svg",
+    imgBlack: "/images/beans-2.svg",
   },
   {
     label: "Our coffee",
@@ -19,6 +19,7 @@ export const links = [
 export const mock = [
   {
     id: 1,
+    best: true,
     img: "/images/coffee/solimo.png",
     name: "Solimo Coffee Beans 2 kg",
     price: 10.73,
@@ -26,6 +27,7 @@ export const mock = [
   },
   {
     id: 2,
+    best: true,
     img: "/images/coffee/presto.png",
     name: "Presto Coffee Beans 1 kg",
     price: 15.99,
@@ -33,6 +35,15 @@ export const mock = [
   },
   {
     id: 3,
+    best: true,
+    img: "/images/coffee/aromisto.png",
+    name: "AROMISTICO Coffee 1 kg",
+    price: 6.99,
+    description: "Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    id: 4,
+    best: false,
     img: "/images/coffee/aromisto.png",
     name: "AROMISTICO Coffee 1 kg",
     price: 6.99,

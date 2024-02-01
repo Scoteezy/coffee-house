@@ -63,7 +63,7 @@
     ],
 
     // * Indent format (gap = 2)
-    "indent": ["error", 2],
+    "indent": ["warn", 2],
 
     // * Formatting the end of the line by windows format (CRLF)
     "linebreak-style": ["error", "windows"],

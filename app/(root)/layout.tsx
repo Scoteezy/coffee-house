@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import React from "react";
 
+import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 
 export const metadata: Metadata = {
@@ -16,9 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex h-screen wrapper">
-      <Header />
-      <section>{children}</section>
+    <div>
+      <Header style="coffee" title="Our Coffee" />
+      <section className="wrapper">{children}</section>
+      <Footer />
     </div>
   );
 }

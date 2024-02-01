@@ -4,7 +4,12 @@ import React from "react";
 import { ICoffee } from "@/types";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-const Card = ({ id, img, name, price }: Omit<ICoffee, "description">) => {
+const Card = ({
+  id,
+  img,
+  name,
+  price,
+}: Omit<ICoffee, "best" | "description">) => {
   const router = useRouter();
 
   return (
