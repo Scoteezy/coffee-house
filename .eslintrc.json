@@ -6,10 +6,8 @@
   },
   "extends": [
     "next/core-web-vitals",
-    "standard",
     "eslint:recommended",
     "plugin:sonarjs/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:perfectionist/recommended-natural",
     "plugin:prettier/recommended"
   ],

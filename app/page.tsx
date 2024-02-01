@@ -1,10 +1,16 @@
 import About from "@/components/homePage/About";
+import Best from "@/components/homePage/Best";
 import Hero from "@/components/homePage/Hero";
-export default function Home () {
+import Footer from "@/components/shared/Footer";
+const Home = () => {
   return (
     <main className="w-full">
-      <Hero/>
-      <About/>
+      <Hero />
+      <About />
+      <Best />
+      <Footer />
     </main>
   );
-}
+};
+
+export default Home;
