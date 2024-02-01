@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 const Pleasure = () => {
   return (
     <>
-      <About/>
+      <About title='About your pleasure'/>
       <div className="w-full">
         <div className="w-[250px] mx-auto h-[1px] bg-black my-10"></div>
       </div>

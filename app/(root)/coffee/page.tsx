@@ -6,7 +6,7 @@ import List from "@/components/shared/List";
 const Coffee = () => {
   return (
     <>
-      <About/>
+      <About title="About our beans"/>
 
       <div className="flex w-full flex-col flex-center">
         <div className="w-[250px] h-[1px] bg-black my-10"></div>
