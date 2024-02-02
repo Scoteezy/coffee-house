@@ -72,7 +72,7 @@
     "linebreak-style": ["warn", "windows"],
 
     // * The term format ('string')
-    "quotes": ["error", "double"],
+    "quotes": ["warn", "double"],
 
     // * Format of the end of the line, installation of a point with a comma (;)
     "semi": ["warn", "always"],
