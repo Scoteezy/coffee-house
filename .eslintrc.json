@@ -55,7 +55,7 @@
 
     // * Line length format (120 characters))
     "max-len": [
-      "error",
+      "warn",
       {
         "code": 120,
         "ignoreUrls": true,
