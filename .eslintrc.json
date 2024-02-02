@@ -48,7 +48,7 @@
     "unicorn/prefer-spread": "off",
 
     // * Bracket style format
-    "brace-style": ["error", "1tbs"],
+    "brace-style": ["warn", "1tbs"],
 
     // * The format of the style of functions
     "curly": ["error", "all"],
@@ -79,7 +79,7 @@
 
     // * The format of installation of a gap in front of the function of the function
     "space-before-function-paren": [
-      "error",
+      "warn",
       {
         "anonymous": "always",
         "named": "always",
@@ -89,7 +89,7 @@
 
     // * Indent format between operators
     "padding-line-between-statements": [
-      "error",
+      "warn",
       {
         "blankLine": "always",
         "prev": ["const", "let", "var"],
@@ -104,7 +104,7 @@
 
     // * The format of the length of the name of the variable
     "id-length": [
-      "error",
+      "warn",
       {
         "min": 3,
         "exceptions": ["i", "x", "y", "e", "t", "_", "id", "or", "OR", "z"]
@@ -128,7 +128,7 @@
     "perfectionist/sort-object-types": "off",
     "perfectionist/sort-objects": "off",
     "perfectionist/sort-imports": [
-      "error",
+      "warn",
       {
         "type": "natural",
         "order": "asc",
