@@ -10,7 +10,6 @@ import { handleError } from "../utils";
 
 export async function createCoffee ({ coffee }: CreateCoffeeParams ) {
   try {
-    console.log(coffee);
     await connectToDatabase();
     if (coffee.country !== "Kenya" && coffee.country !== "Brazil" && coffee.country !== "Columbia") {
       throw new Error("No such country in menu");

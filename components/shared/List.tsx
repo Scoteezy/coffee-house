@@ -19,7 +19,7 @@ const List = ({ data, carousel }: ListProps) => {
         {data.map((cof) => (
           <CarouselItem
             className="basis-full md:basis-1/2 lg:basis-1/3 flex flex-center"
-            key={cof.id}
+            key={cof._id}
           >
             <Card {...cof} />
 

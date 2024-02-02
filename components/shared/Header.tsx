@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 
 import Navigation from "./Navigation";
-const Header = ({ style, title }: { style: string; title: string }) => {
+const Header = () => {
   const pathname = usePathname();
 
   return (

@@ -18,7 +18,7 @@ export default function RootLayout ({
 }>) {
   return (
     <div>
-      <Header style="coffee" title="Our Coffee" />
+      <Header/>
       <section className="wrapper">{children}</section>
       <Footer />
     </div>

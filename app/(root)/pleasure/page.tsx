@@ -9,7 +9,8 @@ const Pleasure = () => {
       </div>
       <div className="wrapper">
         <h2 className="h2-regular text-center">Search for your package</h2>
-        <Input className="mt-5" placeholder="Your package number"/>
+        <Input className="mt-5"
+          placeholder="Your package number"/>
       </div>
      
     </>
