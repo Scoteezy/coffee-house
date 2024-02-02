@@ -1,17 +1,25 @@
 "use client";
 import React from "react";
 
-import { ICoffee } from "@/types";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 import { priceConverter } from "@/lib/utils";
+interface CardProps { 
+  _id:string,
+  name: string,
+  price: string,
+  miniImgUrl?: string,
+  imgUrl:string,
+}
+
 const Card = ({
-  id,
+  _id,
   name,
   price,
-  miniImg
-}: Omit<ICoffee, "best" | "description">) => {
+  miniImgUrl,
+  imgUrl,
+}: CardProps) => {
   const router = useRouter();
 
   return (
@@ -21,9 +29,9 @@ const Card = ({
         className="h-[130px] w-[130px cursor-pointer"
         height={130}
         onClick={() => {
-          router.push(`/coffee/${id}`);
+          router.push(`/coffee/${_id}`);
         }}
-        src={miniImg}
+        src={miniImgUrl || imgUrl}
         width={130}
       />
       <p className="p-regular-14 mt-3">{name}</p>

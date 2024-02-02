@@ -1,10 +1,9 @@
-import { ICoffee } from "@/types";
-
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { ICoffee } from "@/lib/database/models/coffee.model";
 
 import Card from "./Card";
 
@@ -13,7 +12,7 @@ interface ListProps {
   carousel?: boolean
 }
 
-const List = ({ data,carousel }: ListProps) => {
+const List = ({ data, carousel }: ListProps) => {
   return (
     carousel ? (<Carousel className="w-full mx-auto">
       <CarouselContent>
@@ -23,15 +22,17 @@ const List = ({ data,carousel }: ListProps) => {
             key={cof.id}
           >
             <Card {...cof} />
+
           </CarouselItem>
         ))}
       </CarouselContent>
-    </Carousel>): 
+    </Carousel>) :
       <div className=" grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 ">
-        { data.map((cof,i) => i<6 && (
-          <Card  key={cof.id} {...cof} />
+        {data.map((cof, i) => i < 6 && (
+          <Card key={cof._id}
+            {...cof} />
         ))}
-      </div>  
+      </div>
   );
 };
 

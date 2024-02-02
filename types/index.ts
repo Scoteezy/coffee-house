@@ -1,10 +1,18 @@
-export interface ICoffee { 
-    id: number| string,
-    best: boolean,
-    img: string,
-    country: string,
-    miniImg: string,
+export type Country = "Brazil" | "Columbia" | "Kenya"
+
+export type CreateCoffeeParams = { 
+   coffee: {
     name: string,
-    price: number,
-    description: string
+    description: string,
+    country: Country,
+    price: string,
+    best?: boolean,
+    imgUrl: string,
+    miniImgUrl?: string,
+   }
 }
+export type SearchParamProps = {
+   params: { id: string };
+   searchParams: { [key: string]: string | string[] | undefined };
+ };
+ 

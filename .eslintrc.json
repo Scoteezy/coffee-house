@@ -65,15 +65,17 @@
 
     // * Indent format (gap = 2)
     "indent": ["warn", 2],
+    // Props per line
+    "react/jsx-max-props-per-line": ["warn", { "maximum": 1, "when": "always" }],
 
     // * Formatting the end of the line by windows format (CRLF)
-    "linebreak-style": ["warning", "windows"],
+    "linebreak-style": ["warn", "windows"],
 
     // * The term format ('string')
     "quotes": ["error", "double"],
 
     // * Format of the end of the line, installation of a point with a comma (;)
-    "semi": ["warning", "always"],
+    "semi": ["warn", "always"],
 
     // * The format of installation of a gap in front of the function of the function
     "space-before-function-paren": [
