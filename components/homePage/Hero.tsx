@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import Beans from "../shared/Beans";
 import Navigation from "../shared/Navigation";
+import { Button } from "../ui/button";
 const Hero = () => {
   return (
     <section className="bg-hero  text-white">
@@ -18,9 +19,10 @@ const Hero = () => {
             We makes every day full of energy and taste
             <br /> Want to ry our beans?
           </p>
-          <button className="bg-none border flex flex-center w-[120px] h-[30px] mt-4">
+          <Button className="bg-none border flex flex-center w-[120px] h-[30px] mt-4"
+            variant="ghost">
             <Link href="/coffee">More</Link>
-          </button>
+          </Button>
         </div>
       </div>
     </section>

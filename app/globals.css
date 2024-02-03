@@ -167,4 +167,9 @@
   .p-medium-12 {
     @apply text-[12px] font-medium leading-[20px];
   }
+   /* SHADCN OVERRIDES */
+  .input-field {
+    @apply h-[54px] focus-visible:ring-offset-0  rounded-xl p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+  }
+
 }

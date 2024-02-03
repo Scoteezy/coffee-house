@@ -1,8 +1,10 @@
 
 import { SearchParamProps } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 
 import Beans from "@/components/shared/Beans";
+import { Button } from "@/components/ui/button";
 import { getCoffeeById } from "@/lib/actions/coffee.actions";
 import { priceConverter } from "@/lib/utils";
 const CoffeePage = async ({
@@ -31,6 +33,9 @@ const CoffeePage = async ({
             {priceConverter(coffee.price)}
           </span>
         </p>
+        <Button className="bg-none border flex flex-center w-[120px] h-[30px] mt-4 mx-auto">
+          <Link href="/payment">Buy</Link>
+        </Button>
       </div>
     </div>
   );
