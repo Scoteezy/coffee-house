@@ -15,4 +15,20 @@ export type SearchParamProps = {
    params: { id: string };
    searchParams: { [key: string]: string | string[] | undefined };
  };
+export type GetAllCoffeeParams = {
+   query: string;
+   country: string;
+   limit: number;
+   page: number;
+ };
+ 
+export type UrlQueryParams = {
+   params: string;
+   key: string;
+   value: null | string;
+ };
+export type RemoveUrlQueryParams = {
+   params: string;
+   keysToRemove: string[];
+ };
  

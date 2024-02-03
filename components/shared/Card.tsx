@@ -11,6 +11,7 @@ interface CardProps {
   price: string,
   miniImgUrl?: string,
   imgUrl:string,
+  country: string
 }
 
 const Card = ({
@@ -19,6 +20,7 @@ const Card = ({
   price,
   miniImgUrl,
   imgUrl,
+  country
 }: CardProps) => {
   const router = useRouter();
 
@@ -35,6 +37,7 @@ const Card = ({
         width={130}
       />
       <p className="p-regular-14 mt-3">{name}</p>
+      <p className="p-regular-14 ml-[136px] mt-3">{country}</p>
       <p className="p-bold-14 ml-[136px] mt-3">{priceConverter(price)}</p>
     </div>
   );
